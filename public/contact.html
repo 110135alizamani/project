@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" itemscope itemtype="https://schema.org/ContactPage">
+<head>
+  <link rel="stylesheet" href="../resources/assets/css/main.css">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تماس با تیم معرفت برای ارسال پرسش‌ها، پیشنهادها و همکاری‌های علمی">
+  <meta name="keywords" content="تماس با معرفت, ارتباط با تیم, پیشنهاد, پرسش دینی, همکاری علمی">
+  <meta name="author" content="معرفت">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/contact">
+  <title>تماس با معرفت | معرفت</title>
+</head>
+<body>
+
+  <header><h1 class="site-title">
+    <img src="../resources/assets/images/logo.svg" alt="لوگو معرفت" height="40"> معرفت</h1>
+    
+    <nav class="main-nav" aria-label="ناوبری اصلی سایت">
+      <ul>
+        <li><a href="about.html">درباره معرفت</a></li>
+        <li><a href="team.html">تیم ما</a></li>
+        <li><a href="contact.html">تماس با معرفت</a></li>
+        <li><a href="donation.html">کمک‌های خیر</a></li>
+      </ul>
+    </nav>
+  
+    <nav class="auth-nav" aria-label="ناوبری کاربری">
+      <ul>
+        <li><a href="login.html">ورود</a></li>
+        <li><a href="signup.html">ثبت‌نام</a></li>
+        <li><a href="dashboard.html">داشبورد</a></li>
+        <li><a href="logout.html">خروج</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main itemprop="mainContentOfPage">
+    <section id="contact-info">
+      <h2>راه‌های ارتباطی</h2>
+      <ul>
+        <li><strong>ایمیل:</strong> <a href="mailto:info@example.com" itemprop="email">info@example.com</a></li>
+        <li><strong>شماره تماس:</strong> <span itemprop="telephone">09999999999</span></li>
+        <li><strong>آدرس:</strong> <span itemprop="address">فلان استان، فلان شهر، فلان خیابان</span></li>
+      </ul>
+    </section>
+
+    <section id="contact-form">
+      <h2>فرم ارسال پیام</h2>
+      <form action="/submit-contact" method="post" autocomplete="off" itemprop="potentialAction" itemscope itemtype="https://schema.org/CommunicateAction">
+        <fieldset>
+          <legend>اطلاعات تماس شما</legend>
+
+          <label for="name">نام کامل:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">ایمیل:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="subject">موضوع پیام:</label>
+          <input type="text" id="subject" name="subject">
+        </fieldset>
+
+        <fieldset>
+          <legend>متن پیام</legend>
+
+          <label for="message">پیام شما:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </fieldset>
+
+        <button type="submit">ارسال پیام</button>
+      </form>
+
+      <!-- پیام موفقیت پس از ارسال (نمایش توسط سرور یا جاوااسکریپت) -->
+      <div class="success-message" style="display:none;">
+        پیام شما با موفقیت ارسال شد. با شما تماس خواهیم گرفت.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 معرفت. تمامی حقوق محفوظ است.</p>
+  </footer>
+
+</body>
+</html>
