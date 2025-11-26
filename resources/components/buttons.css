@@ -1,0 +1,42 @@
+.btn-primary {
+    background-color: var(--md-sys-color-primary);   /* رنگ پس‌زمینه دکمه (رنگ اصلی سایت) */
+    color: var(--md-sys-color-on-primary);          /* رنگ متن روی دکمه (معمولاً سفید) */
+    border: none;                                   /* بدون کادر دور */
+    height: 32px;                                   /* ارتفاع استاندارد دکمه کوچک در M3 */
+    padding: 0 12px;                                /* فاصله داخلی افقی (چپ و راست) */
+    border-radius: 8px;                             /* گوشه‌های گرد طبق استاندارد M3 */
+    font-size: 13px;                                /* اندازه فونت برای دکمه کوچک */
+    font-weight: 500;                               /* ضخامت فونت متوسط (Medium) */
+    cursor: pointer;                                /* تغییر نشانگر موس به حالت کلیک */
+    display: inline-flex;                           /* چینش داخلی برای متن/آیکن */
+    align-items: center;                            /* وسط‌چین عمودی محتوا */
+    justify-content: center;                        /* وسط‌چین افقی محتوا */
+    box-shadow: 0 2px 6px var(--md-sys-color-shadow); /* سایه سبک برای برجسته شدن دکمه */
+    transition: background-color 0.3s ease,         /* تغییر نرم رنگ پس‌زمینه در هاور */
+                transform 0.2s ease,                /* تغییر نرم اندازه/حرکت */
+                box-shadow 0.3s ease;               /* تغییر نرم سایه */
+  }
+  
+  /* حالت هاور (وقتی موس روی دکمه می‌رود) */
+  .btn-primary:hover {
+    background-color: var(--md-sys-color-primary-container); /* رنگ روشن‌تر برای هاور */
+    color: var(--md-sys-color-on-primary-container);         /* رنگ متن هماهنگ با هاور */
+    transform: translateY(-2px);                            /* حرکت کمی به بالا برای حس تعامل */
+    box-shadow: 0 4px 10px var(--md-sys-color-shadow);       /* سایه بزرگ‌تر در هاور */
+  }
+  
+  /* حالت کلیک (وقتی دکمه فشرده می‌شود) */
+  .btn-primary:active {
+    background-color: var(--md-sys-color-tertiary);          /* تغییر رنگ هنگام کلیک */
+    transform: scale(0.97);                                  /* کمی کوچک‌تر شدن برای حس فشار */
+    box-shadow: 0 2px 4px var(--md-sys-color-shadow);        /* سایه کمتر در حالت کلیک */
+  }
+  
+  /* حالت غیرفعال (وقتی دکمه غیرقابل استفاده است) */
+  .btn-primary:disabled {
+    background-color: var(--md-sys-color-outline-variant);   /* رنگ خاکستری برای غیرفعال */
+    color: var(--md-sys-color-on-surface);                   /* متن کم‌رنگ‌تر */
+    cursor: not-allowed;                                     /* نشانگر موس به حالت ممنوع */
+    box-shadow: none;                                        /* بدون سایه */
+  }
+  
